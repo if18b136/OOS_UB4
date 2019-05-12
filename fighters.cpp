@@ -84,21 +84,22 @@ void create(Fighter * arena[]){
 	cin >> num;
 	switch (num){
 	case 1:
-		arena[0] = new Warrior(name);
+		arena[fighter_num-1] = new Warrior(name);
 		break;
 	case 2:
-		arena[0] = new Ninja(name);
+		arena[fighter_num-1] = new Ninja(name);
 		break;
 	case 3:
-		arena[0] = new Mage(name);
+		arena[fighter_num-1] = new Mage(name);
 		break;
 	case 4:
-		arena[0] = new Cultist(name);
+		arena[fighter_num-1] = new Cultist(name);
 		break;
 	default:
 		cout << "That is not a valid class...";
 		break;
 	}
+	cout <<"Fighter number "<< fighter_num << endl;
 }
 
 void lastManStanding(Fighter * arena[]){
